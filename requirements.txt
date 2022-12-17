@@ -8,3 +8,4 @@ pandas-profiling
 streamlit-pandas-profiling
 dash
 dash-bootstrap-components
+yfinance
