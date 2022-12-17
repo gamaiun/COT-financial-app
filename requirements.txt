@@ -1,0 +1,10 @@
+﻿numpy
+pandas
+scipy
+matplotlib
+streamlit
+plotly
+pandas-profiling
+streamlit-pandas-profiling
+dash
+dash-bootstrap-components
