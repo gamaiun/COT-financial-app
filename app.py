@@ -112,8 +112,8 @@ cot_coin = df_copy[df_copy.coin == cot_instrument]
 
 fig2 = go.Figure([go.Scatter(x=cot_coin["Date"], y = cot_coin[cot_report], line = dict(color='black', width=1))])
 
-fig2.add_trace(go.Scatter(x= cot_coin["Date"], y=cot_coin[cot_report].rolling(MA).mean(), name=f'{MA}-MA',
-                           line = dict(color='firebrick', width=1)))
+# fig2.add_trace(go.Scatter(x= cot_coin["Date"], y=cot_coin[cot_report].rolling(MA).mean(), name=f'{MA}-MA',
+#                            line = dict(color='firebrick', width=1)))
 fig2.update_xaxes(range=[start_date, end_date])
 fig2.update_layout(go.Layout(margin=dict(t=0),  height=260), showlegend=False)
 
@@ -135,8 +135,8 @@ with st.container():
 
 
 fig3 = go.Figure([go.Scatter(x=cot_coin["Date"], y = cot_coin[cot_indicator], line = dict(color='black', width=1))])
-fig3.add_trace(go.Scatter(x= cot_coin["Date"], y=cot_coin[cot_indicator].rolling(MA).mean(), name=f'{MA}-MA',
-                           line = dict(color='firebrick', width=1)))
+# fig3.add_trace(go.Scatter(x= cot_coin["Date"], y=cot_coin[cot_indicator].rolling(MA).mean(), name=f'{MA}-MA',
+#                            line = dict(color='firebrick', width=1)))
 fig3.update_xaxes(range=[start_date, end_date])
 fig3.update_layout(go.Layout(margin=dict(t=0),  height=260), showlegend=False)
 fig3.add_annotation(text=f"{cot_indicator} COT report of {cot_instrument}.",
